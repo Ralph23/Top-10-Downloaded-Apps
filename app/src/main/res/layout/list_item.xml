@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardUseCompatPadding="true"
+    android:id="@+id/card_view">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:srcCompat="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toEndOf="@+id/iv_icon"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/iv_icon"
+            card_view:layout_constraintStart_toEndOf="@+id/iv_icon" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toTopOf="@+id/tv_release_date"
+            card_view:layout_constraintStart_toEndOf="@+id/iv_icon"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_summary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/iv_icon"
+            card_view:layout_constraintTop_toBottomOf="@+id/iv_icon" />
+
+        <!--<com.ms.square.android.expandabletextview.ExpandableTextView-->
+        <!--android:id="@+id/expandable_textview"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--card_view:animDuration="200"-->
+        <!--card_view:layout_constraintEnd_toEndOf="parent"-->
+        <!--card_view:layout_constraintStart_toEndOf="@+id/iv_icon"-->
+        <!--card_view:layout_constraintTop_toBottomOf="@+id/tv_release_date"-->
+        <!--card_view:maxCollapsedLines="2">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_summary"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="10dp"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:textColor="#666"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/expand_collapse"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right|bottom"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:contentDescription="TODO"-->
+        <!--android:padding="16dp" />-->
+
+        <!--</com.ms.square.android.expandabletextview.ExpandableTextView>-->
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

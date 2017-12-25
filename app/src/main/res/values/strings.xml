@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Top 10 Downloaded</string>
+    <string name="menu_free">Free Apps</string>
+    <string name="menu_paid">Paid Apps</string>
+    <string name="menu_songs">Songs</string>
+    <string name="menu_10">Top 10</string>
+    <string name="menu_25">Top 25</string>
+
+</resources>
